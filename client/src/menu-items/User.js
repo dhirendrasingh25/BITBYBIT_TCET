@@ -16,20 +16,21 @@ const User = {
   children: [
     {
       id: "profile",
+      title: "View Profile",
+      type: "item",
+      url: "/profile",
+      icon: icons.LoginOutlined,
+      target: true,
+    },
+    {
+      id: "edit-profile",
       title: "Edit Profile",
       type: "item",
       url: "/edit-profile",
       icon: icons.LoginOutlined,
       target: true,
     },
-    // {
-    //   id: "edit-profile",
-    //   title: "Edit Profile",
-    //   type: "item",
-    //   url: "/edit-profile",
-    //   icon: icons.LoginOutlined,
-    //   target: true,
-    // },
+
     {
       id: "Users",
       title: "User  List",

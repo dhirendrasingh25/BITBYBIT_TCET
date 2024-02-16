@@ -146,29 +146,24 @@ const Profile = () => {
 
         <div className="flex flex-row w-full">
           <div className="flex flex-col w-full ">
-            <div className="text-md py-2 pl-2 text-[#4D5464] font-medium">
-              Goals
-            </div>
+            <div className="text-lg pb-2   text-black  font-medium">Goals</div>
             <div>
-              <div className="flex flex-col w-full  ">
-                <div className="flex flex-row w-full ">
-                  <div className="flex  w-1/2 p-2 border-2  border-slate-300">
+              <div className="flex flex-col w-full  border border-black rounded-lg ">
+                <div className="flex flex-row w-full border-b border-black font-semibold ">
+                  <div className="flex  w-1/2 p-2 border-r border-black  ">
                     Goal
                   </div>
-                  <div className="flex p-2 w-1/2 border-2  border-slate-300">
-                    Amount
-                  </div>
+                  <div className="flex p-2 w-1/2 ">Amount</div>
                 </div>
-                {goals.map((goal, index) => (
-                  <div className="flex flex-row w-full" key={index}>
-                    <div className="flex  w-1/2 p-2 border-2  border-slate-300">
-                      {goal.goal}
+                {goals.length > 2 &&
+                  goals.map((goal, index) => (
+                    <div className="flex flex-row w-full" key={index}>
+                      <div className="flex  w-1/2 p-2 border-r border-black">
+                        {goal.goal}
+                      </div>
+                      <div className="flex p-2 w-1/2 ">{goal.amount}</div>
                     </div>
-                    <div className="flex p-2 w-1/2 border-2  border-slate-300">
-                      {goal.amount}
-                    </div>
-                  </div>
-                ))}
+                  ))}
               </div>
             </div>
           </div>

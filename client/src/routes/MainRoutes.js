@@ -52,6 +52,10 @@ const MainRoutes = {
       element: <Profile />,
     },
     {
+      path: "profile",
+      element: <Profile />,
+    },
+    {
       path: "add-transaction",
       element: <Transaction />,
     },
