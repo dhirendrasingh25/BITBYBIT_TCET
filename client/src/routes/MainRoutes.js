@@ -4,6 +4,8 @@ import { lazy } from "react";
 import Loadable from "components/Loadable";
 import MainLayout from "layout/MainLayout";
 import Profile from "components/MyComponents/Profile/Profile";
+import Transaction from "components/MyComponents/Transaction/Transaction";
+import Calander from "components/MyComponents/Calander/Calander";
 
 // render - dashboard
 const DashboardDefault = Loadable(lazy(() => import("pages/dashboard")));
@@ -45,8 +47,16 @@ const MainRoutes = {
       ],
     },
     {
-      path: "profile",
+      path: "edit-profile",
       element: <Profile />,
+    },
+    {
+      path: "add-transaction",
+      element: <Transaction />,
+    },
+    {
+      path: "calander",
+      element: <Calander />,
     },
     {
       path: "sample-page",
