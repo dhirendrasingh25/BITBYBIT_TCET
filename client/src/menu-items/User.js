@@ -32,7 +32,7 @@ const User = {
     // },
     {
       id: "Users",
-      title: "Users",
+      title: "User  List",
       type: "item",
       url: "/users",
       icon: icons.ProfileOutlined,

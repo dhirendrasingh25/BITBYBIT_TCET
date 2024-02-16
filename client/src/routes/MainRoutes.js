@@ -6,6 +6,7 @@ import MainLayout from "layout/MainLayout";
 import Profile from "components/MyComponents/Profile/Profile";
 import Transaction from "components/MyComponents/Transaction/Transaction";
 import Calander from "components/MyComponents/Calander/Calander";
+import Users from "components/MyComponents/Profile/Users";
 
 // render - dashboard
 const DashboardDefault = Loadable(lazy(() => import("pages/dashboard")));
@@ -53,6 +54,10 @@ const MainRoutes = {
     {
       path: "add-transaction",
       element: <Transaction />,
+    },
+    {
+      path: "users",
+      element: <Users />,
     },
     {
       path: "calander",
